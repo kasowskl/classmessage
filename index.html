@@ -9,6 +9,8 @@
     }
     </script>
     <link href="animate.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="jquery-recolor.js"></script>
   </head>
   <body style="font-family: 'Roboto', sans-serif;">
   <div style="width:100%;">
@@ -18,6 +20,12 @@
   </div>
     
     <b><h2 id="show" style="font-size: 96px; text-align: center;" class="animated infinite tada"></h2></b>
+    <script>
+    $('#show').rainbow({
+        effect: "ripple",
+        speed: 500
+    });
+    </script>
   </body>
 </html>
  
