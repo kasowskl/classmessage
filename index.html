@@ -12,8 +12,7 @@
   <body style="font-family: 'Roboto', sans-serif;">
   <div style="width:100%;">
     <div style="display: table; margin: 0 auto;">
-      <textarea cols="30" rows="5" id="message" style="resize: none; font-family: inherit;">Put your message here to show on screen.</textarea>
-      <button onclick="messageshow()">Show</button>
+      <textarea onkeyup="messageshow()" onchange="messageshow()" cols="30" rows="5" id="message" style="resize: none; font-family: inherit;">Put your message here to show on screen.</textarea>
     </div>
   </div>
     
