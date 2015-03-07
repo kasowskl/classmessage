@@ -12,24 +12,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="jquery-recolor.js"></script>
   </head>
-  <body style="font-family: 'Roboto', sans-serif;" id="background">
-  <div style="width:100%;">
-    <div style="display: table; margin: 0 auto;">
-      <textarea onkeyup="messageshow()" onchange="messageshow()" cols="30" rows="5" id="message" style="resize: none; font-family: inherit;">Put your message here to show on screen.</textarea>
+  <div id="background">
+    <body style="font-family: 'Roboto', sans-serif;">
+    <div style="width:100%;">
+      <div style="display: table; margin: 0 auto;">
+        <textarea onkeyup="messageshow()" onchange="messageshow()" cols="30" rows="5" id="message" style="resize: none; font-family: inherit;">Put your message here to show on screen.</textarea>
+      </div>
     </div>
+      
+      <b><h2 id="show" style="font-size: 96px; text-align: center; -webkit-text-stroke-width: 3px; -webkit-text-stroke-color: black;" class="animated infinite tada"></h2></b>
+      <script>
+      $('#show').rainbow({
+          effect: "ripple",
+          speed: 50
+      });
+      $('#background').rainbow({
+          effect: "ripple", 
+          speed: "medium",
+      });
+      </script>
+    </body>
   </div>
-    
-    <b><h2 id="show" style="font-size: 96px; text-align: center; -webkit-text-stroke-width: 3px; -webkit-text-stroke-color: black;" class="animated infinite tada"></h2></b>
-    <script>
-    $('#show').rainbow({
-        effect: "ripple",
-        speed: 50
-    });
-    $('#background').rainbow({
-        effect: "ripple", 
-        speed: "medium",
-    });
-    </script>
-  </body>
 </html>
  
